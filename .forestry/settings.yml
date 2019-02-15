@@ -8,7 +8,7 @@ sections:
   path: ''
   label: Pages
   create: all
-  match: "**/*"
+  match: docs/**/*
   templates:
   - page
 upload_dir: uploads
