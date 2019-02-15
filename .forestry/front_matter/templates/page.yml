@@ -4,11 +4,11 @@ hide_body: false
 is_partial: false
 fields:
 - type: text
-  name: permalink
-  label: Permalink
-- type: text
   name: title
   label: Title
+- type: text
+  name: permalink
+  label: Permalink
 pages:
 - docs/README.md
 - docs/contact.md
