@@ -5,3 +5,4 @@ is_partial: false
 fields: []
 pages:
 - docs/README.md
+- docs/contact.md
