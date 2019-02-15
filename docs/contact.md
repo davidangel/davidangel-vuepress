@@ -1,6 +1,7 @@
 ---
 date: 2019-02-15 03:13:30 +0000
 url: ''
+permalink: contact
 
 ---
 ## david@davidangel.net
