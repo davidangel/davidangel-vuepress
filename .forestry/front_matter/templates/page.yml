@@ -4,8 +4,8 @@ hide_body: false
 is_partial: false
 fields:
 - type: text
-  name: url
-  label: URL
+  name: permalink
+  label: Permalink
 pages:
 - docs/README.md
 - docs/contact.md
