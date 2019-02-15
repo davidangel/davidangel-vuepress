@@ -2,7 +2,10 @@
 label: Page
 hide_body: false
 is_partial: false
-fields: []
+fields:
+- type: text
+  name: url
+  label: URL
 pages:
 - docs/README.md
 - docs/contact.md
