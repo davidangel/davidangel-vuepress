@@ -5,10 +5,10 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: ''
+  path: docs
   label: Pages
   create: all
-  match: docs/**/*
+  match: "**/*"
   templates:
   - page
 upload_dir: uploads
