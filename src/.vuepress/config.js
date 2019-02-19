@@ -18,22 +18,18 @@ module.exports = {
             },
         ]
     },
+    postcss: {
+        plugins: [
+            require("tailwindcss")("./tailwind.config.js"),
+            require("autoprefixer")
+        ]
+    },
     plugins: [
         [
             '@vuepress/google-analytics',
             {
                 ga: '' // UA-00000000-0
             }
-        ],
-        [
-            'vuepress-plugin-rss',
-            {
-                base_url: '/',
-                site_url: '',
-                filter: frontmatter => frontmatter.date <= new Date(currentDateUTC),
-                count: 20
-            }
-        ],
-        'vuepress-plugin-janitor'
+        ]
     ],
 }

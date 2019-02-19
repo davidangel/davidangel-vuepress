@@ -24,5 +24,3 @@ I'm a lifetime member to Laracasts, an excellent resource for learning Laravel, 
 
 - iPhone 7 Plus
 - Apple Watch 4
-
-<div class="bg-grey-darkest">Some text here.</div>
