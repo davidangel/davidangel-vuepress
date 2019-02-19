@@ -1,6 +1,6 @@
 <template>
   <router-link
-    class="nav-link"
+    class="no-underline text-grey-darkest hover:text-blue hover:bg-grey-lighter px-5 py-4 text-sm"
     :to="link"
     v-if="!isExternal(link)"
     :exact="exact"
@@ -8,7 +8,7 @@
   <a
     v-else
     :href="link"
-    class="nav-link external"
+    class="no-underline text-grey-darkest hover:text-blue hover:bg-grey-lighter px-5 py-4 text-sm external"
     :target="isMailto(link) || isTel(link) ? null : '_blank'"
     :rel="isMailto(link) || isTel(link) ? null : 'noopener noreferrer'"
   >
@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import { isExternal, isMailto, isTel, ensureExt } from '../util'
+import { isExternal, isMailto, isTel, ensureExt } from "../util";
 
 export default {
   props: {
@@ -28,15 +28,17 @@ export default {
   },
 
   computed: {
-    link () {
-      return ensureExt(this.item.link)
+    link() {
+      return ensureExt(this.item.link);
     },
 
-    exact () {
+    exact() {
       if (this.$site.locales) {
-        return Object.keys(this.$site.locales).some(rootLink => rootLink === this.link)
+        return Object.keys(this.$site.locales).some(
+          rootLink => rootLink === this.link
+        );
       }
-      return this.link === '/'
+      return this.link === "/";
     }
   },
 
@@ -45,5 +47,5 @@ export default {
     isMailto,
     isTel
   }
-}
+};
 </script>

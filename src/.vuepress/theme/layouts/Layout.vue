@@ -5,21 +5,31 @@
     @touchstart="onTouchStart"
     @touchend="onTouchEnd"
   >
-    <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
+    <div class="container mx-auto px-4">
+      <div class="logo flex items-center p-12">
+        <a href="/" class="mx-auto">
+          <DALogo/>
+        </a>
+      </div>
 
-    <div class="sidebar-mask" @click="toggleSidebar(false)"></div>
+      <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
 
-    <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar">
-      <slot name="sidebar-top" slot="top"/>
-      <slot name="sidebar-bottom" slot="bottom"/>
-    </Sidebar>
+      <div class="sidebar-mask" @click="toggleSidebar(false)"></div>
 
-    <Home v-if="$page.frontmatter.home"/>
+      <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar">
+        <slot name="sidebar-top" slot="top"/>
+        <slot name="sidebar-bottom" slot="bottom"/>
+      </Sidebar>
 
-    <Page v-else :sidebar-items="sidebarItems">
-      <slot name="page-top" slot="top"/>
-      <slot name="page-bottom" slot="bottom"/>
-    </Page>
+      <Home v-if="$page.frontmatter.home"/>
+
+      <Page v-else :sidebar-items="sidebarItems">
+        <slot name="page-top" slot="top"/>
+        <slot name="page-bottom" slot="bottom"/>
+      </Page>
+
+      <DAFooter/>
+    </div>
   </div>
 </template>
 
@@ -28,10 +38,19 @@ import Home from "../components/Home.vue";
 import Navbar from "../components/Navbar.vue";
 import Page from "../components/Page.vue";
 import Sidebar from "../components/Sidebar.vue";
+import DALogo from "../components/DALogo.vue";
+import DAFooter from "../components/DAFooter.vue";
 import { resolveSidebarItems } from "../util";
 
 export default {
-  components: { Home, Page, Sidebar, Navbar },
+  components: {
+    Home,
+    Page,
+    Sidebar,
+    Navbar,
+    DALogo,
+    DAFooter
+  },
 
   data() {
     return {

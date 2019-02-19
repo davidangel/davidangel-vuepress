@@ -2,57 +2,36 @@
   <main class="page">
     <slot name="top"/>
 
-    <Content/>
+    <div class="content flex items-center">
+      <div class="w-full md:mx-auto">
+        <div class="shadow">
+          <div class="font-medium text-lg px-10 py-8 md:px-20 md:py-16 bg-white leading-normal">
+            <Content/>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="page-edit">
-      <div
-        class="edit-link"
-        v-if="editLink"
-      >
-        <a
-          :href="editLink"
-          target="_blank"
-          rel="noopener noreferrer"
-        >{{ editLinkText }}</a>
+      <div class="edit-link" v-if="editLink">
+        <a :href="editLink" target="_blank" rel="noopener noreferrer">{{ editLinkText }}</a>
         <OutboundLink/>
       </div>
 
-      <div
-        class="last-updated"
-        v-if="lastUpdated"
-      >
-        <span class="prefix">{{ lastUpdatedText }}: </span>
+      <div class="last-updated" v-if="lastUpdated">
+        <span class="prefix">{{ lastUpdatedText }}:</span>
         <span class="time">{{ lastUpdated }}</span>
       </div>
     </footer>
 
     <div class="page-nav" v-if="prev || next">
       <p class="inner">
-        <span
-          v-if="prev"
-          class="prev"
-        >
-          ←
-          <router-link
-            v-if="prev"
-            class="prev"
-            :to="prev.path"
-          >
-            {{ prev.title || prev.path }}
-          </router-link>
+        <span v-if="prev" class="prev">←
+          <router-link v-if="prev" class="prev" :to="prev.path">{{ prev.title || prev.path }}</router-link>
         </span>
-
-        <span
-          v-if="next"
-          class="next"
-        >
-          <router-link
-            v-if="next"
-            :to="next.path"
-          >
-            {{ next.title || next.path }}
-          </router-link>
-          →
+        
+        <span v-if="next" class="next">
+          <router-link v-if="next" :to="next.path">{{ next.title || next.path }}</router-link>→
         </span>
       </p>
     </div>
@@ -62,189 +41,198 @@
 </template>
 
 <script>
-import { resolvePage, normalize, outboundRE, endingSlashRE } from '../util'
+import { resolvePage, normalize, outboundRE, endingSlashRE } from "../util";
 
 export default {
-  props: ['sidebarItems'],
+  props: ["sidebarItems"],
 
   computed: {
-    lastUpdated () {
-      return this.$page.lastUpdated
+    lastUpdated() {
+      return this.$page.lastUpdated;
     },
 
-    lastUpdatedText () {
-      if (typeof this.$themeLocaleConfig.lastUpdated === 'string') {
-        return this.$themeLocaleConfig.lastUpdated
+    lastUpdatedText() {
+      if (typeof this.$themeLocaleConfig.lastUpdated === "string") {
+        return this.$themeLocaleConfig.lastUpdated;
       }
-      if (typeof this.$site.themeConfig.lastUpdated === 'string') {
-        return this.$site.themeConfig.lastUpdated
+      if (typeof this.$site.themeConfig.lastUpdated === "string") {
+        return this.$site.themeConfig.lastUpdated;
       }
-      return 'Last Updated'
+      return "Last Updated";
     },
 
-    prev () {
-      const prev = this.$page.frontmatter.prev
+    prev() {
+      const prev = this.$page.frontmatter.prev;
       if (prev === false) {
-        return
+        return;
       } else if (prev) {
-        return resolvePage(this.$site.pages, prev, this.$route.path)
+        return resolvePage(this.$site.pages, prev, this.$route.path);
       } else {
-        return resolvePrev(this.$page, this.sidebarItems)
+        return resolvePrev(this.$page, this.sidebarItems);
       }
     },
 
-    next () {
-      const next = this.$page.frontmatter.next
+    next() {
+      const next = this.$page.frontmatter.next;
       if (next === false) {
-        return
+        return;
       } else if (next) {
-        return resolvePage(this.$site.pages, next, this.$route.path)
+        return resolvePage(this.$site.pages, next, this.$route.path);
       } else {
-        return resolveNext(this.$page, this.sidebarItems)
+        return resolveNext(this.$page, this.sidebarItems);
       }
     },
 
-    editLink () {
+    editLink() {
       if (this.$page.frontmatter.editLink === false) {
-        return
+        return;
       }
       const {
         repo,
         editLinks,
-        docsDir = '',
-        docsBranch = 'master',
+        docsDir = "",
+        docsBranch = "master",
         docsRepo = repo
-      } = this.$site.themeConfig
+      } = this.$site.themeConfig;
 
-      let path = normalize(this.$page.path)
+      let path = normalize(this.$page.path);
       if (endingSlashRE.test(path)) {
-        path += 'README.md'
+        path += "README.md";
       } else {
-        path += '.md'
+        path += ".md";
       }
       if (docsRepo && editLinks) {
-        return this.createEditLink(repo, docsRepo, docsDir, docsBranch, path)
+        return this.createEditLink(repo, docsRepo, docsDir, docsBranch, path);
       }
     },
 
-    editLinkText () {
+    editLinkText() {
       return (
-        this.$themeLocaleConfig.editLinkText
-        || this.$site.themeConfig.editLinkText
-        || `Edit this page`
-      )
+        this.$themeLocaleConfig.editLinkText ||
+        this.$site.themeConfig.editLinkText ||
+        `Edit this page`
+      );
     }
   },
 
   methods: {
-    createEditLink (repo, docsRepo, docsDir, docsBranch, path) {
-      const bitbucket = /bitbucket.org/
+    createEditLink(repo, docsRepo, docsDir, docsBranch, path) {
+      const bitbucket = /bitbucket.org/;
       if (bitbucket.test(repo)) {
-        const base = outboundRE.test(docsRepo)
-          ? docsRepo
-          : repo
+        const base = outboundRE.test(docsRepo) ? docsRepo : repo;
         return (
-          base.replace(endingSlashRE, '')
-           + `/src`
-           + `/${docsBranch}`
-           + (docsDir ? '/' + docsDir.replace(endingSlashRE, '') : '')
-           + path
-           + `?mode=edit&spa=0&at=${docsBranch}&fileviewer=file-view-default`
-        )
+          base.replace(endingSlashRE, "") +
+          `/src` +
+          `/${docsBranch}` +
+          (docsDir ? "/" + docsDir.replace(endingSlashRE, "") : "") +
+          path +
+          `?mode=edit&spa=0&at=${docsBranch}&fileviewer=file-view-default`
+        );
       }
 
       const base = outboundRE.test(docsRepo)
         ? docsRepo
-        : `https://github.com/${docsRepo}`
+        : `https://github.com/${docsRepo}`;
 
       return (
-        base.replace(endingSlashRE, '')
-        + `/edit/${docsBranch}`
-        + (docsDir ? '/' + docsDir.replace(endingSlashRE, '') : '')
-        + path
-      )
+        base.replace(endingSlashRE, "") +
+        `/edit/${docsBranch}` +
+        (docsDir ? "/" + docsDir.replace(endingSlashRE, "") : "") +
+        path
+      );
     }
   }
+};
+
+function resolvePrev(page, items) {
+  return find(page, items, -1);
 }
 
-function resolvePrev (page, items) {
-  return find(page, items, -1)
+function resolveNext(page, items) {
+  return find(page, items, 1);
 }
 
-function resolveNext (page, items) {
-  return find(page, items, 1)
-}
-
-function find (page, items, offset) {
-  const res = []
-  flattern(items, res)
+function find(page, items, offset) {
+  const res = [];
+  flattern(items, res);
   for (let i = 0; i < res.length; i++) {
-    const cur = res[i]
-    if (cur.type === 'page' && cur.path === decodeURIComponent(page.path)) {
-      return res[i + offset]
+    const cur = res[i];
+    if (cur.type === "page" && cur.path === decodeURIComponent(page.path)) {
+      return res[i + offset];
     }
   }
 }
 
-function flattern (items, res) {
+function flattern(items, res) {
   for (let i = 0, l = items.length; i < l; i++) {
-    if (items[i].type === 'group') {
-      flattern(items[i].children || [], res)
+    if (items[i].type === "group") {
+      flattern(items[i].children || [], res);
     } else {
-      res.push(items[i])
+      res.push(items[i]);
     }
   }
 }
-
 </script>
 
 <style lang="stylus">
-@require '../styles/wrapper.styl'
+.page-edit {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  overflow: auto;
 
-.page
-  padding-bottom 2rem
-  display block
+  .edit-link {
+    display: inline-block;
 
-.page-edit
-  @extend $wrapper
-  padding-top 1rem
-  padding-bottom 1rem
-  overflow auto
-  .edit-link
-    display inline-block
-    a
-      color lighten($textColor, 25%)
-      margin-right 0.25rem
-  .last-updated
-    float right
-    font-size 0.9em
-    .prefix
-      font-weight 500
-      color lighten($textColor, 25%)
-    .time
-      font-weight 400
-      color #aaa
+    a {
+      color: lighten($textColor, 25%);
+      margin-right: 0.25rem;
+    }
+  }
 
-.page-nav
-  @extend $wrapper
-  padding-top 1rem
-  padding-bottom 0
-  .inner
-    min-height 2rem
-    margin-top 0
-    border-top 1px solid $borderColor
-    padding-top 1rem
-    overflow auto // clear float
-  .next
-    float right
+  .last-updated {
+    float: right;
+    font-size: 0.9em;
 
-@media (max-width: $MQMobile)
-  .page-edit
-    .edit-link
-      margin-bottom .5rem
-    .last-updated
-      font-size .8em
-      float none
-      text-align left
+    .prefix {
+      font-weight: 500;
+      color: lighten($textColor, 25%);
+    }
 
+    .time {
+      font-weight: 400;
+      color: #aaa;
+    }
+  }
+}
+
+.page-nav {
+  padding-top: 1rem;
+  padding-bottom: 0;
+
+  .inner {
+    min-height: 2rem;
+    margin-top: 0;
+    border-top: 1px solid $borderColor;
+    padding-top: 1rem;
+    overflow: auto; // clear float
+  }
+
+  .next {
+    float: right;
+  }
+}
+
+@media (max-width: $MQMobile) {
+  .page-edit {
+    .edit-link {
+      margin-bottom: 0.5rem;
+    }
+
+    .last-updated {
+      font-size: 0.8em;
+      float: none;
+      text-align: left;
+    }
+  }
+}
 </style>
