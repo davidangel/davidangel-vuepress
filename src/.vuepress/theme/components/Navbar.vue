@@ -74,6 +74,9 @@ function css(el, property) {
 </script>
 
 <style lang="stylus">
+.search-box {
+}
+
 ul.suggestions {
   left: -10rem;
   margin-top: 0.5rem;
@@ -82,6 +85,10 @@ ul.suggestions {
 @media (max-width: $MQMobile) {
   .can-hide {
     display: none;
+  }
+
+  .search-box {
+    padding-right: 1rem;
   }
 }
 </style>

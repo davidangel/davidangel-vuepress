@@ -96,4 +96,7 @@ export default {
 </script>
 
 <style lang="stylus">
+.nav-links {
+  box-sizing: border-box;
+}
 </style>
