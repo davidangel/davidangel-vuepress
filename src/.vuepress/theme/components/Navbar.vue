@@ -1,17 +1,17 @@
 <template>
   <nav class="bg-white h-12 shadow mb-8">
     <div class="container sm mx-auto h-full">
-      <div class="flex items-center h-12">
+      <div class>
         <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
         <div
-          class="links"
+          class="links flex flex-row justify-between"
           :style="linksWrapMaxWidth ? {
         'max-width': linksWrapMaxWidth + 'px'
       } : {}"
         >
           <NavLinks class="can-hide"/>
-          <AlgoliaSearchBox v-if="isAlgoliaSearch" :options="algolia"/>
-          <SearchBox v-else-if="$site.themeConfig.search !== false"/>
+          <AlgoliaSearchBox class="mt-2" v-if="isAlgoliaSearch" :options="algolia"/>
+          <SearchBox class="mt-2" v-else-if="$site.themeConfig.search !== false"/>
         </div>
       </div>
     </div>
@@ -74,6 +74,11 @@ function css(el, property) {
 </script>
 
 <style lang="stylus">
+ul.suggestions {
+  left: -10rem;
+  margin-top: 0.5rem;
+}
+
 @media (max-width: $MQMobile) {
   .can-hide {
     display: none;
