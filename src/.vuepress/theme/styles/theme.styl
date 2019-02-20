@@ -1,6 +1,7 @@
 @tailwind preflight;
 @tailwind components;
 @tailwind utilities;
+@require '../../../../node_modules/@fortawesome/fontawesome-free/css/all.css'
 
 @require './code'
 @require './custom-blocks'
@@ -8,10 +9,9 @@
 @require './wrapper'
 @require './toc'
 
-html, body
-  padding 0
-  margin 0
-  background-color #fff
+html, body {
+  @apply bg-grey-lightest h-screen antialiased
+}
 
 body
   font-family -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
@@ -20,19 +20,7 @@ body
   font-size 16px
   color $textColor
 
-.page
-  padding-left $sidebarWidth
 
-.navbar
-  position fixed
-  z-index 20
-  top 0
-  left 0
-  right 0
-  height $navbarHeight
-  background-color #fff
-  box-sizing border-box
-  border-bottom 1px solid $borderColor
 
 .sidebar-mask
   position fixed
@@ -57,24 +45,6 @@ body
   border-right 1px solid $borderColor
   overflow-y auto
 
-.content:not(.custom)
-  @extend $wrapper
-  > *:first-child
-    margin-top $navbarHeight
-  a:hover
-    text-decoration underline
-  p.demo
-    padding 1rem 1.5rem
-    border 1px solid #ddd
-    border-radius 4px
-  img
-    max-width 100%
-
-.content.custom
-  padding 0
-  margin 0
-  img
-    max-width 100%
 
 a
   font-weight 500
@@ -188,3 +158,7 @@ th, td
       padding-left 0
 
 @require 'mobile.styl'
+
+.router-link-active, .router-link-exact-active {
+  @apply border-b-2 border-solid border-blue;
+}

@@ -7,9 +7,9 @@
   >
     <div class="container mx-auto px-4">
       <div class="logo flex items-center p-12">
-        <a href="/" class="mx-auto">
+        <router-link class="mx-auto" to="/">
           <DALogo/>
-        </a>
+        </router-link>
       </div>
 
       <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>

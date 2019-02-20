@@ -35,9 +35,11 @@
           </div>
         </div>
         <div class="w-1/3 py-5 w-full md:w-1/3">
-          <a href="/" class="mx-auto">
-            <DALogo size="75"></DALogo>
-          </a>
+          <div class="logo flex items-center p-12">
+            <router-link class="mx-auto" to="/">
+              <DALogo size="75"/>
+            </router-link>
+          </div>
         </div>
         <div class="w-1/3 py-5 flex justify-around w-full md:w-1/3">
           <div>
