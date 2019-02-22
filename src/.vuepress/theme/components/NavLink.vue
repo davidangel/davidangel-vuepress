@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import { isExternal, isMailto, isTel, ensureExt } from "../util";
+import { isExternal, isMailto, isTel, ensureExt } from "../util"
 
 export default {
   props: {
@@ -29,16 +29,16 @@ export default {
 
   computed: {
     link() {
-      return ensureExt(this.item.link);
+      return ensureExt(this.item.link)
     },
 
     exact() {
       if (this.$site.locales) {
         return Object.keys(this.$site.locales).some(
           rootLink => rootLink === this.link
-        );
+        )
       }
-      return this.link === "/";
+      return this.link === "/"
     }
   },
 
@@ -47,7 +47,7 @@ export default {
     isMailto,
     isTel
   }
-};
+}
 </script>
 
 <style lang="stylus">
@@ -55,5 +55,6 @@ export default {
   border-bottom-width: 2px;
   border-style: solid;
   border-color: #70a5d8;
+  padding-bottom: 1.2rem;
 }
 </style>
