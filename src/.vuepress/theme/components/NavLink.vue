@@ -51,6 +51,13 @@ export default {
 </script>
 
 <style lang="stylus">
+.nav-links .nav-link:hover {
+  border-bottom-width: 2px;
+  border-style: solid;
+  border-color: #ccc;
+  padding-bottom: 1.2rem;
+}
+
 .nav-links .router-link-exact-active {
   border-bottom-width: 2px;
   border-style: solid;
