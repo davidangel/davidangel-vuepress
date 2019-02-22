@@ -1,0 +1,22 @@
+---
+label: Resume Entry
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: job_title
+  label: Job Title
+- type: text
+  name: organization_name
+  label: Organization Name
+- type: color
+  name: accent_color
+  config:
+    color_format: Hex
+  label: Accent Color
+- type: datetime
+  name: start_date
+  label: Start Date
+- type: datetime
+  name: end_date
+  label: End Date
