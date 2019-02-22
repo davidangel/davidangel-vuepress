@@ -20,3 +20,5 @@ fields:
 - type: datetime
   name: end_date
   label: End Date
+pages:
+- src/resume/radiosystems.md
