@@ -9,6 +9,3 @@ fields:
 - type: text
   name: permalink
   label: Permalink
-pages:
-- docs/README.md
-- docs/contact.md
