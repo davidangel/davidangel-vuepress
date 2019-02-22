@@ -5,7 +5,7 @@
     <div class="content flex items-center">
       <div class="w-full md:mx-auto">
         <div class="shadow">
-          <div class="font-medium text-lg px-10 py-8 md:px-20 md:py-16 bg-white leading-normal">
+          <div class="px-10 py-8 md:px-20 md:py-16 bg-white">
             <Content/>
           </div>
         </div>

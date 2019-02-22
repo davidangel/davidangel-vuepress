@@ -2,6 +2,7 @@
 date: 2019-02-15 03:08:02 +0000
 title: Home
 permalink: /
+sidebar: true
 ---
 
 # Hello

@@ -4,9 +4,12 @@
     "build": "vuepress build src"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.5.0",
     "@vuepress/plugin-google-analytics": "^1.0.0-alpha.0",
     "tailwindcss": "^0.7.4",
-    "vuepress": "^1.0.0-alpha.37",
-    "@fortawesome/fontawesome-free": "^5.5.0"
+    "vuepress": "^1.0.0-alpha.39"
+  },
+  "prettier": {
+    "semi": false
   }
 }
