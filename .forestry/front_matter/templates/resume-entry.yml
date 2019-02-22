@@ -24,8 +24,8 @@ fields:
   name: end_date
   label: End Date
 pages:
-- src/resume/freelance-web-developer.md
 - src/resume/radiosystems.md
+- src/resume/freelance-web-developer.md
 - src/resume/metamedia.md
 - src/resume/angel_and_associates.md
 - src/resume/education.md
