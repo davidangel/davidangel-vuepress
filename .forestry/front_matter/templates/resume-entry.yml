@@ -4,8 +4,8 @@ hide_body: false
 is_partial: false
 fields:
 - type: text
-  name: slug
-  label: Slug
+  name: permalink
+  label: Permalink
 - type: text
   name: job_title
   label: Job Title
