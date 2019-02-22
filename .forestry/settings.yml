@@ -6,9 +6,11 @@ webhook_url:
 sections:
 - type: directory
   path: src/resume
-  label: Resume
-  create: all
+  label: Resume Items
+  create: documents
   match: "**/*"
+  templates:
+  - resume-entry
 - type: directory
   path: src
   label: Pages
