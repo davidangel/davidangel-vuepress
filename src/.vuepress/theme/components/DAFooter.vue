@@ -35,7 +35,7 @@
           </div>
         </div>
         <div class="w-1/3 py-5 w-full md:w-1/3">
-          <div class="logo flex items-center p-12">
+          <div class="logo flex items-center p-1 md:p-4">
             <router-link class="mx-auto" to="/">
               <DALogo size="75"/>
             </router-link>
@@ -82,7 +82,7 @@
   </footer>
 </template>
 <script>
-import DALogo from "../components/DALogo.vue";
+import DALogo from "../components/DALogo.vue"
 export default {
   name: "DAFooter",
   components: { DALogo },
@@ -90,7 +90,7 @@ export default {
     return {
       appName: "David Angel",
       currentYear: new Date().getFullYear()
-    };
+    }
   }
-};
+}
 </script>
