@@ -1,10 +1,10 @@
 ---
 date: 2019-02-15 03:13:30 +0000
-title: davidangel / uses
+title: What do I use?
 permalink: /uses
 ---
 
-# davidangel / uses
+# What do I use?
 
 ## Software
 
@@ -24,3 +24,8 @@ I'm a lifetime member to Laracasts, an excellent resource for learning Laravel, 
 
 - iPhone 7 Plus
 - Apple Watch 4
+
+## Photography
+
+- iPhone
+- Fujifilm X-T2

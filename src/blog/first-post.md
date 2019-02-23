@@ -1,19 +1,15 @@
 ---
-title: My Fourth Post
-date: 2018-12-28 17:22:00
+title: VuePress + Netlify
+pemalink: vuepress-netlify
+date: 2019-02-23 17:22:00
 type: post
-excerpt: I'm creating my first post!
+excerpt:
 tags:
-  - Blogging
-  - Tutorials
+  - Static Sites
+  - Vue
+  - Netlify
 ---
 
-# Hello!
+# Now running VuePress + Netlify!
 
-This is pretty awesome!
-
-::: tip
-Aren't custom containers cool?
-:::
-
-> "I have a big head... and little arms." - T-rex from 'Meet the Robinsons'
+I've spent some time migrating my site from it's existing Laravel + VueJS approach to a VuePress statically generated site that's hosted with Netlify.
