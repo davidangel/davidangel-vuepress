@@ -1,5 +1,5 @@
 <template>
-  <footer class="mt-10">
+  <footer class="mt-1">
     <div class="px-2">
       <div class="flex flex-wrap -mx-2 text-xs text-center uppercase font-hairline tracking-wide">
         <div class="w-1/3 py-5 flex justify-around w-full md:w-1/3">
