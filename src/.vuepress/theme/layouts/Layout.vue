@@ -7,9 +7,9 @@
   >
     <div class="container mx-auto px-4">
       <div class="logo flex items-center p-12">
-        <router-link class="mx-auto" to="/">
+        <div class="mx-auto">
           <DALogo/>
-        </router-link>
+        </div>
       </div>
 
       <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
@@ -34,13 +34,13 @@
 </template>
 
 <script>
-import Home from "../components/Home.vue";
-import Navbar from "../components/Navbar.vue";
-import Page from "../components/Page.vue";
-import Sidebar from "../components/Sidebar.vue";
-import DALogo from "../components/DALogo.vue";
-import DAFooter from "../components/DAFooter.vue";
-import { resolveSidebarItems } from "../util";
+import Home from "../components/Home.vue"
+import Navbar from "../components/Navbar.vue"
+import Page from "../components/Page.vue"
+import Sidebar from "../components/Sidebar.vue"
+import DALogo from "../components/DALogo.vue"
+import DAFooter from "../components/DAFooter.vue"
+import { resolveSidebarItems } from "../util"
 
 export default {
   components: {
@@ -55,15 +55,15 @@ export default {
   data() {
     return {
       isSidebarOpen: false
-    };
+    }
   },
 
   computed: {
     shouldShowNavbar() {
-      const { themeConfig } = this.$site;
-      const { frontmatter } = this.$page;
+      const { themeConfig } = this.$site
+      const { frontmatter } = this.$page
       if (frontmatter.navbar === false || themeConfig.navbar === false) {
-        return false;
+        return false
       }
       return (
         this.$title ||
@@ -71,16 +71,16 @@ export default {
         themeConfig.repo ||
         themeConfig.nav ||
         this.$themeLocaleConfig.nav
-      );
+      )
     },
 
     shouldShowSidebar() {
-      const { frontmatter } = this.$page;
+      const { frontmatter } = this.$page
       return (
         !frontmatter.home &&
         frontmatter.sidebar !== false &&
         this.sidebarItems.length
-      );
+      )
     },
 
     sidebarItems() {
@@ -89,11 +89,11 @@ export default {
         this.$page.regularPath,
         this.$site,
         this.$localePath
-      );
+      )
     },
 
     pageClasses() {
-      const userPageClass = this.$page.frontmatter.pageClass;
+      const userPageClass = this.$page.frontmatter.pageClass
       return [
         {
           "no-navbar": !this.shouldShowNavbar,
@@ -101,19 +101,19 @@ export default {
           "no-sidebar": !this.shouldShowSidebar
         },
         userPageClass
-      ];
+      ]
     }
   },
 
   mounted() {
     this.$router.afterEach(() => {
-      this.isSidebarOpen = false;
-    });
+      this.isSidebarOpen = false
+    })
   },
 
   methods: {
     toggleSidebar(to) {
-      this.isSidebarOpen = typeof to === "boolean" ? to : !this.isSidebarOpen;
+      this.isSidebarOpen = typeof to === "boolean" ? to : !this.isSidebarOpen
     },
 
     // side swipe
@@ -121,22 +121,22 @@ export default {
       this.touchStart = {
         x: e.changedTouches[0].clientX,
         y: e.changedTouches[0].clientY
-      };
+      }
     },
 
     onTouchEnd(e) {
-      const dx = e.changedTouches[0].clientX - this.touchStart.x;
-      const dy = e.changedTouches[0].clientY - this.touchStart.y;
+      const dx = e.changedTouches[0].clientX - this.touchStart.x
+      const dy = e.changedTouches[0].clientY - this.touchStart.y
       if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
         if (dx > 0 && this.touchStart.x <= 80) {
-          this.toggleSidebar(true);
+          this.toggleSidebar(true)
         } else {
-          this.toggleSidebar(false);
+          this.toggleSidebar(false)
         }
       }
     }
   }
-};
+}
 </script>
 
 <style src="prismjs/themes/prism-tomorrow.css"></style>
