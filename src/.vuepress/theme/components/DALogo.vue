@@ -1,6 +1,6 @@
 <template>
   <div ontouchstart class="DALogo" v-bind:style="{ width: size + 'px', height: size + 'px' }">
-    <flip :active-click="true">
+    <flip :active-click="true" :width="size" height="size">
       <div slot="front">
         <div>
           <svg
