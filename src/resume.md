@@ -6,15 +6,6 @@ permalink: /resume
 
 # Resume
 
-```js
-module.exports = {
-  developer: {
-    name: "David Angel",
-    skills: ["javascript", "php", "sql", "ecommerce", "Laravel", "VueJS"]
-  }
-}
-```
-
 ## Senior Web Developer @ Radio Systems Corporation <Badge text="Apr 2014 – present"/>
 
 Work with e-commerce team to keep company web properties up and running. Participate in the planning and development of new features, using Agile. Utilize object-oriented PHP with Magento e-commerce framework, front-end development workflows, and CMS knowledge to make customer experiences awesome. Become proficient with various debugging and problem-solving techniques. Take responsibility for production infrastructure (LAMP-stack). Participate in “on-call” rotation with other senior developers.
