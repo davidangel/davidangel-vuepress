@@ -4,6 +4,6 @@ title: Contact
 permalink: /contact
 ---
 
-## david@davidangel.net
+## <ClickToSelect>david@davidangel.net</ClickToSelect>
 
 Sending me an email is a great way to get in touch with me. I look forward to hearing from you. 😀
