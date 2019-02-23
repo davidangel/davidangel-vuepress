@@ -58,6 +58,9 @@
 </template>
 
 <style>
+.DALogo svg {
+  cursor: pointer;
+}
 .DALogo {
   transition-duration: 0.8s;
   transition-property: transform;
