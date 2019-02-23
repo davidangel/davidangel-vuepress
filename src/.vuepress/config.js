@@ -1,6 +1,6 @@
 module.exports = {
     title: 'David Angel',
-    description: 'Software Engineer',
+    description: 'My name is David Angel. I’m a web developer with a passion for finding efficient ways to solve problems.',
     permalink: '/:year/:month/:day/:slug',
     dest: './dist',
     themeConfig: {
