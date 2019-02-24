@@ -13,7 +13,7 @@ permalink: /reading-list
 | Book                      |   Status    |
 | ------------------------- | :---------: |
 | Jim Henson: The Biography |  Completed  |
-| Crime & Punishment        | In Progress |
+| Crime & Punishment        |  Completed  |
 
 ## 2018
 
