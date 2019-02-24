@@ -35,6 +35,8 @@ Focus: Electronic Media Production
 
 I'm happy to provide references on request.
 
+## Download
+
 Download a PDF copy of my resume <a href="/Resume_DavidAngel.pdf" target="blank">here</a>.
 
 Do you want to <router-link to="/contact">reach out</router-link>?
