@@ -10,10 +10,11 @@ permalink: /reading-list
 
 ## 2019
 
-| Book                      |   Status    |
-| ------------------------- | :---------: |
-| Jim Henson: The Biography |  Completed  |
-| Crime & Punishment        |  Completed  |
+| Book                      |       Author       |   Status    |
+| ------------------------- | :----------------: | :---------: |
+| Jim Henson: The Biography |  Brian Jay Jones   |  Completed  |
+| Crime & Punishment        | Fyodor Dostoyevsky |  Completed  |
+| You Need A Budget         |    Jesse Mecham    | In Progress |
 
 ## 2018
 
