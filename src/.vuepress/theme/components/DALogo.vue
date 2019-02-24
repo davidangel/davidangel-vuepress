@@ -50,6 +50,7 @@
           :width="size"
           :height="size"
           alt="David Angel"
+          title="David Angel"
           class="rounded-full border-2 border-solid border-black"
         >
       </div>
