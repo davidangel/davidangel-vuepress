@@ -1,5 +1,5 @@
 <template>
-  <aside class="sidebar">
+  <aside class="sidebar shadow">
     <NavLinks/>
     <slot name="top"/>
     <SidebarLinks :depth="0" :items="items"/>
@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import SidebarLinks from "./SidebarLinks.vue";
-import NavLinks from "./NavLinks.vue";
+import SidebarLinks from "./SidebarLinks.vue"
+import NavLinks from "./NavLinks.vue"
 
 export default {
   name: "Sidebar",
@@ -17,7 +17,7 @@ export default {
   components: { SidebarLinks, NavLinks },
 
   props: ["items"]
-};
+}
 </script>
 
 <style lang="stylus">
