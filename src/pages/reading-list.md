@@ -10,11 +10,13 @@ permalink: /reading-list
 
 ## 2019
 
-| Book                      |       Author       |   Status    |
-| ------------------------- | :----------------: | :---------: |
-| Jim Henson: The Biography |  Brian Jay Jones   |  Completed  |
-| Crime & Punishment        | Fyodor Dostoyevsky |  Completed  |
-| You Need A Budget         |    Jesse Mecham    | In Progress |
+| Book                                                                                 |       Author       |  Status   |
+| ------------------------------------------------------------------------------------ | :----------------: | :-------: |
+| Jim Henson: The Biography                                                            |  Brian Jay Jones   | Completed |
+| Crime & Punishment                                                                   | Fyodor Dostoyevsky | Completed |
+| You Need A Budget                                                                    |    Jesse Mecham    | Completed |
+| The Girl Who Kicked the Hornet's Nest                                                |   Stieg Larsson    | Completed |
+| Blessed are the Peacemakers: Christ's Teachings of Love, Compassion, and Forgiveness |   Wendell Berry    | Completed |
 
 ## 2018
 
