@@ -17,6 +17,10 @@ permalink: /reading-list
 | You Need A Budget                                                                    |    Jesse Mecham    | Completed |
 | The Girl Who Kicked the Hornet's Nest                                                |   Stieg Larsson    | Completed |
 | Blessed are the Peacemakers: Christ's Teachings of Love, Compassion, and Forgiveness |   Wendell Berry    | Completed |
+| The Magician's Nephew                                                                |     C.S. Lewis     | Completed |
+| Grain Brain:The Surprising Truth about Wheat, Carbs, and Sugar                       |  David Perlmutter  | Completed |
+| The Lion, The Witch, and The Wardrobe                                                |     C.S. Lewis     | Completed |
+| A Confession                                                                         |    Leo Tolstoy     | Completed |
 
 ## 2018
 
