@@ -4,11 +4,11 @@
     "build": "vuepress build src"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.5.0",
-    "@vuepress/plugin-google-analytics": "^1.0.2",
-    "tailwindcss": "^0.7.4",
-    "vuepress": "^1.1.0",
-    "js-yaml": "^3.13.1"
+    "@fortawesome/fontawesome-free": "^5.11.1",
+    "@vuepress/plugin-google-analytics": "^1.1.0",
+    "js-yaml": "^3.13.1",
+    "tailwindcss": "^1.1.2",
+    "vuepress": "^1.1.0"
   },
   "prettier": {
     "semi": false
