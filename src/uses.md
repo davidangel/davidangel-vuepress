@@ -12,18 +12,19 @@ I've been doing a lot of code editing in VSCode, but occasionally switch back to
 
 ## Learning Resources
 
-I'm a lifetime member to Laracasts, an excellent resource for learning Laravel, PHP, VueJS, and a lot more.
+I'm a lifetime member to [Laracasts](https://laracasts.com/), an excellent resource for learning Laravel, PHP, VueJS, and a lot more.
 
 ## Hardware
 
-- Macbook Pro (circa 2015)
+- Macbook Pro (2015)
+- Mac Mini (2018)
 - Logitech G513 Keyboard
 - Logitech G502 Mouse
 
 ## Mobile
 
-- iPhone 7 Plus
-- Apple Watch 4
+- iPhone SE
+- Apple Watch Series 4
 
 ## Photography
 
