@@ -23,6 +23,7 @@ permalink: /reading-list
 | A Confession                                                                         |    Leo Tolstoy     | Completed |
 | The Horse and His Boy                                                                |     C.S. Lewis     | Completed |
 | Scrappy Little Nobody (audiobook)                                                    |   Anna Kendrick    | Completed |
+| Prince Caspian                                                                       |     C.S. Lewis     | Completed |
 
 ## 2018
 
