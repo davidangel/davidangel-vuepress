@@ -35,7 +35,15 @@ module.exports = {
       "sitemap",
       {
         hostname: "https://davidangel.net"
+      },
+      "autometa",
+      {
+        site: {
+          name: "David Angel",
+          twitter: "davidius"
+        },
+        canonical_base: "https://davidangel.net"
       }
     ]
   ]
-}
+};

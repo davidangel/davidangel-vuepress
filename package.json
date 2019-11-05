@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "esm": "^3.2.25",
-    "vuepress-plugin-sitemap": "^2.3.0"
+    "vuepress-plugin-sitemap": "^2.3.0",
+    "vuepress-plugin-autometa": "0.1.12"
   }
 }
