@@ -1,6 +1,6 @@
 <template>
   <div ontouchstart class="DALogo" v-bind:style="{ width: size + 'px', height: size + 'px' }">
-    <flip :active-click="true" :width="size" height="size">
+    <flip :hover="flipped" :active-click="true" :width="size" height="size">
       <div slot="front">
         <div>
           <svg
@@ -24,7 +24,7 @@
                 class="inner-circle"
                 cy="219.352661px"
                 :fill="background"
-              ></circle>
+              />
               <g>
                 <g>
                   <path
@@ -37,7 +37,7 @@
                   >
                     <title>a</title>
                   </path>
-                  <circle r="211.3" cx="210.033" class="OuterCircle" cy="218.953"></circle>
+                  <circle r="211.3" cx="210.033" class="OuterCircle" cy="218.953" />
                 </g>
               </g>
             </g>
@@ -52,7 +52,7 @@
           alt="David Angel"
           title="David Angel"
           class="rounded-full border-2 border-solid border-black"
-        >
+        />
       </div>
     </flip>
   </div>
@@ -87,6 +87,9 @@ export default {
   props: {
     size: {
       default: "100"
+    },
+    flipped: {
+      default: false
     }
   },
   data() {

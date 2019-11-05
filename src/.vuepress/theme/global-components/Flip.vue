@@ -30,6 +30,11 @@ export default {
       required: false,
       default: false
     },
+    hover: {
+      type: Boolean,
+      required: false,
+      default: false
+    },
     width: {
       type: String,
       required: true
