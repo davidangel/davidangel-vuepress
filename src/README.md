@@ -3,6 +3,7 @@ date: 2019-02-15 03:08:02 +0000
 title: Home
 permalink: /
 sidebar: true
+description: My name is David Angel. I’m a Software Engineer with a passion for finding efficient ways to solve problems. Lately, I've been focusing on web application development + e-commerce.
 ---
 
 <div class="leading-loose text-5xl font-bold">

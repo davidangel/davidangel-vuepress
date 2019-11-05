@@ -1,3 +1,11 @@
+const autometaOptions = {
+  site: {
+    name: "David Angel",
+    twitter: "davidius"
+  },
+  canonical_base: "https://davidangel.net"
+}
+
 module.exports = {
   title: "David Angel",
   description:
@@ -31,19 +39,14 @@ module.exports = {
       "@vuepress/google-analytics",
       {
         ga: "UA-5083765-21"
-      },
+      }
+    ],
+    [
       "sitemap",
       {
         hostname: "https://davidangel.net"
-      },
-      "autometa",
-      {
-        site: {
-          name: "David Angel",
-          twitter: "davidius"
-        },
-        canonical_base: "https://davidangel.net"
       }
-    ]
+    ],
+    ["autometa", autometaOptions]
   ]
-};
+}

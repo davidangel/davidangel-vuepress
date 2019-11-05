@@ -2,9 +2,12 @@
 date: 2019-02-23 03:13:30 +0000
 title: Reading List
 permalink: /reading-list
+description: A running list of some of the stuff I've been reading (and sometimes listening to).
 ---
 
 # Reading List
+
+A running list of some of the stuff I've been reading (and sometimes listening to).
 
 [[toc]]
 
