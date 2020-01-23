@@ -16,3 +16,7 @@ Here is a list of fantastic and free Mac Apps you may want to check out.
 ## Journaling
 
 - [Mini Diary](https://minidiary.app/) - A simple journaling app.
+
+## Development
+
+- [Fork](https://git-fork.com/) - A very nice Git client for Mac (and Windows)
