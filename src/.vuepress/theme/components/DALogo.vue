@@ -1,6 +1,11 @@
 <template>
-  <div ontouchstart class="DALogo" v-bind:style="{ width: size + 'px', height: size + 'px' }">
-    <flip :hover="flipped" :active-click="true" :width="size" height="size">
+  <div
+    ontouchstart
+    class="DALogo"
+    v-bind:style="{ width: size + 'px', height: size + 'px' }"
+    @click="doFlip"
+  >
+    <flip :hover="isFlipped" :active-click="true" :width="size" height="size">
       <div slot="front">
         <div>
           <svg
@@ -92,8 +97,14 @@ export default {
       default: false
     }
   },
+  methods: {
+    doFlip: function() {
+      return (this.isFlipped = !this.isFlipped)
+    }
+  },
   data() {
     return {
+      isFlipped: this.flipped,
       background: "#70a5d8"
     }
   }
