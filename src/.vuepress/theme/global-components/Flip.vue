@@ -47,9 +47,7 @@ export default {
     }
   },
   data() {
-    return {
-      hover: false
-    }
+    return {}
   },
   computed: {
     cardStyle() {
