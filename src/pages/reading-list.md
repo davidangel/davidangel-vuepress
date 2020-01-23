@@ -13,20 +13,21 @@ A running list of some of the stuff I've been reading (and sometimes listening t
 
 ## 2019
 
-| Book                                                                                 |       Author       |  Status   |
-| ------------------------------------------------------------------------------------ | :----------------: | :-------: |
-| Jim Henson: The Biography (audiobook)                                                |  Brian Jay Jones   | Completed |
-| Crime & Punishment                                                                   | Fyodor Dostoyevsky | Completed |
-| You Need A Budget                                                                    |    Jesse Mecham    | Completed |
-| The Girl Who Kicked the Hornet's Nest (audiobook)                                    |   Stieg Larsson    | Completed |
-| Blessed are the Peacemakers: Christ's Teachings of Love, Compassion, and Forgiveness |   Wendell Berry    | Completed |
-| The Magician's Nephew                                                                |     C.S. Lewis     | Completed |
-| Grain Brain:The Surprising Truth about Wheat, Carbs, and Sugar (audiobook)           |  David Perlmutter  | Completed |
-| The Lion, The Witch, and The Wardrobe                                                |     C.S. Lewis     | Completed |
-| A Confession                                                                         |    Leo Tolstoy     | Completed |
-| The Horse and His Boy                                                                |     C.S. Lewis     | Completed |
-| Scrappy Little Nobody (audiobook)                                                    |   Anna Kendrick    | Completed |
-| Prince Caspian                                                                       |     C.S. Lewis     | Completed |
+| Book                                                                                 |        Author        |  Status   |
+| ------------------------------------------------------------------------------------ | :------------------: | :-------: |
+| Jim Henson: The Biography (audiobook)                                                |   Brian Jay Jones    | Completed |
+| Crime & Punishment                                                                   |  Fyodor Dostoyevsky  | Completed |
+| You Need A Budget                                                                    |     Jesse Mecham     | Completed |
+| The Girl Who Kicked the Hornet's Nest (audiobook)                                    |    Stieg Larsson     | Completed |
+| Blessed are the Peacemakers: Christ's Teachings of Love, Compassion, and Forgiveness |    Wendell Berry     | Completed |
+| The Magician's Nephew                                                                |      C.S. Lewis      | Completed |
+| Grain Brain:The Surprising Truth about Wheat, Carbs, and Sugar (audiobook)           |   David Perlmutter   | Completed |
+| The Lion, The Witch, and The Wardrobe                                                |      C.S. Lewis      | Completed |
+| A Confession                                                                         |     Leo Tolstoy      | Completed |
+| The Horse and His Boy                                                                |      C.S. Lewis      | Completed |
+| Scrappy Little Nobody (audiobook)                                                    |    Anna Kendrick     | Completed |
+| Prince Caspian                                                                       |      C.S. Lewis      | Completed |
+| Up From Slavery ([my highlights](/reading/my-notes/up-from-slavery))                 | Booker T. Washington | Completed |
 
 ## 2018
 
