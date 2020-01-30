@@ -22,15 +22,16 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Intro, name: intro, widget: markdown }
           - label: "Resume Item"
-            name: resume-item
+            name: resumeItems
             widget: list
             fields:
               - { label: Title, name: title, widget: string }
-              - { label: "Company Name", name: company-name, widget: string }
-              - { label: "Company URL", name: company-url, widget: string }
+              - { label: "Company Name", name: companyName, widget: string }
+              - { label: "Company URL", name: companyUrl, widget: string }
               - { label: Dates, name: dates, widget: string }
               - { label: Description, name: description, widget: markdown }
               - { label: Featured, name: featured, widget: boolean }
+              - { label: Image, name: image, widget: file }
           - { label: Outro, name: outro, widget: markdown }
 
       - label: "Contact"
