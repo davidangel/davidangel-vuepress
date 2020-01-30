@@ -1,0 +1,51 @@
+backend:
+  name: github
+  repo: davidangel/davidangel-vuepress
+  branch: dev
+media_folder: "src/.vuepress/public/images"
+public_folder: "dist/"
+collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "src/README.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
+
+      - label: "Resume"
+        name: "resume"
+        file: "src/pages/resume.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: markdown }
+          - label: "Resume Item"
+            name: resume-item
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: "Company Name", name: company-name, widget: string }
+              - { label: "Company URL", name: company-url, widget: string }
+              - { label: Dates, name: dates, widget: string }
+              - { label: Description, name: description, widget: markdown }
+              - { label: Featured, name: featured, widget: boolean }
+          - { label: Outro, name: outro, widget: markdown }
+
+      - label: "Contact"
+        name: "contact"
+        file: "src/pages/contact.md"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
+
+  - label: "Blog"
+    name: "blog"
+    folder: "src/blog"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }

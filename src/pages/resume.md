@@ -21,7 +21,6 @@ Also begin taking on scrum master responsibilities. Lead daily stand-up meetings
 
 Work collaboratively on customer relationship/lead generation software using the Symfony PHP framework, jQuery, and HTML5. Learn and utilize MVC methodology. Perform daily content management tasks using Joomla and WordPress. Develop a small-scale social networking solution for a client. Create documentation for software and processes.
 
-
 </ResumeItem>
 
 <ResumeItem title="Freelance Web Developer" companyName="(self-employed)" dates="Jan 2012 – Nov 2012" class="">
@@ -35,7 +34,6 @@ Work with a variety of small business clients to develop customized WordPress si
 Interact with clients to come up with the best solution for their web needs. Design/code websites either from scratch or using WordPress as CMS of choice. Customize code to create admin interfaces that are less confusing, and more streamlined. Setup servers, test servers, domain registrations, Google Apps installations, and provide basic IT support for many clients.
 
 </ResumeItem>
-
 
 <ResumeItem title="Web Development Intern" companyName="DoubleJay Creative" dates="Jul 2008 – Dec 2008" class="">
 
