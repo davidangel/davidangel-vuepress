@@ -14,7 +14,14 @@ resume-item:
   - company-name: Company Two
     company-url: 'https://davidangel.net'
     dates: 2010-2014
-    description: Some more description for two.
+    description: |-
+      Some more description for two.
+
+      <a href="#">Link here.</a>
+
+
+
+      Something [remote](https://davidangel.net).
     featured: true
     title: Two
 outro: >
@@ -23,6 +30,9 @@ outro: >
   voluptatibus. Dignissimos saepe quibusdam aliquid officia provident vero
   ipsam. Autem in ipsam qui. Nostrum amet pariatur tempora laboriosam ut
   incidunt asperiores.
+
+
+  ## H2 Example
 
 
   Cum ea temporibus facere. Sunt quas ut aut. Voluptate quidem voluptatem
