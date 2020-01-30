@@ -17,7 +17,7 @@ collections:
 
       - label: "Resume"
         name: "resume"
-        file: "src/pages/resume.md"
+        file: "src/pages/resume2.md"
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Intro, name: intro, widget: markdown }
@@ -40,12 +40,13 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Body, name: body, widget: markdown }
 
-  - label: "Blog"
-    name: "blog"
+  - name: "blog"
+    label: "Blog"
     folder: "src/blog"
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: Title, name: title, widget: string, required: true }
+      - { label: Description, name: description, widget: text, required: true }
+      - { label: Publish date, name: date, widget: "datetime" }
+      - { label: Content, name: body, widget: "markdown" }
