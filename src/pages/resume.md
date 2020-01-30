@@ -1,6 +1,6 @@
 ---
 title: Resume
-intro: \-
+intro: '-'
 resume-item:
   - company-name: Radio Systems Corporation
     company-url: 'https://davidangel.net'
