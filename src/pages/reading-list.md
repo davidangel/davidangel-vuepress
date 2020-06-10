@@ -8,6 +8,13 @@ permalink: /reading-list
 
 [[toc]]
 
+## 2020
+
+| Book                     |      Author      |  Status   |
+| ------------------------ | :--------------: | :-------: |
+| Sculpting in Time        | Andrey Tarkovsky | Completed |
+| The Man Who Was Thursday | G. K. Chesterton | Completed |
+
 ## 2019
 
 | Book                                                                                 |       Author       |  Status   |
