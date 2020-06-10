@@ -3,7 +3,6 @@
     class="flip-container"
     :class="{ 'active-hover': activeHover, 'hover': hover }"
     :style="{ width: width, height: height }"
-    @click="handlerHover"
   >
     <div class="flipper" :style="cardStyle">
       <div class="front" :style="cardStyle">
@@ -30,6 +29,11 @@ export default {
       required: false,
       default: false
     },
+    hover: {
+      type: Boolean,
+      required: false,
+      default: false
+    },
     width: {
       type: String,
       required: true
@@ -42,9 +46,7 @@ export default {
     }
   },
   data() {
-    return {
-      hover: false
-    }
+    return {}
   },
   computed: {
     cardStyle() {
@@ -65,13 +67,7 @@ export default {
       return result
     }
   },
-  methods: {
-    handlerHover() {
-      if (this.activeClick) {
-        this.hover = !this.hover
-      }
-    }
-  }
+  methods: {}
 }
 </script>
 
