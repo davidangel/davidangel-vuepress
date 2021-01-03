@@ -16,14 +16,12 @@ I'm a lifetime member to [Laracasts](https://laracasts.com/), an excellent resou
 
 ## Hardware
 
-- Macbook Pro (2015)
-- Mac Mini (2018)
-- Logitech G513 Keyboard
-- Logitech G502 Mouse
+- Macbook Pro (2019)
+- MacBook Air (2020)
 
 ## Mobile
 
-- iPhone SE
+- iPhone 7
 - Apple Watch Series 4
 
 ## Photography
