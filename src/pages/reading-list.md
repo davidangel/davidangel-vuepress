@@ -21,7 +21,7 @@ A running list of some of the stuff I've been reading (and sometimes listening t
 
 | Book                                                   |      Author      |  Status   |
 | ------------------------------------------------------ | :--------------: | :-------: |
-| Sculpting in Time                                      | Andrey Tarkovsky | Completed |
+| Sculpting in Time                                      | Andrei Tarkovsky | Completed |
 | The Man Who Was Thursday                               | G. K. Chesterton | Completed |
 | White Fragility                                        |  Robin DiAngelo  | Completed |
 | Pinocchio                                              |  Carlo Collodi   | Completed |
