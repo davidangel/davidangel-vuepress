@@ -11,12 +11,23 @@ A running list of some of the stuff I've been reading (and sometimes listening t
 
 [[toc]]
 
+## 2021
+
+| Book                       |    Author     |   Status    |
+| -------------------------- | :-----------: | :---------: |
+| The Fellowship of the Ring | J.R.R Tolkien | In Progress |
+
 ## 2020
 
-| Book                     |      Author      |  Status   |
-| ------------------------ | :--------------: | :-------: |
-| Sculpting in Time        | Andrey Tarkovsky | Completed |
-| The Man Who Was Thursday | G. K. Chesterton | Completed |
+| Book                                                   |      Author      |  Status   |
+| ------------------------------------------------------ | :--------------: | :-------: |
+| Sculpting in Time                                      | Andrey Tarkovsky | Completed |
+| The Man Who Was Thursday                               | G. K. Chesterton | Completed |
+| White Fragility                                        |  Robin DiAngelo  | Completed |
+| Pinocchio                                              |  Carlo Collodi   | Completed |
+| I'm Thinking of Ending Things                          |    Iain Reid     | Completed |
+| The Holy Bible                                         |                  | Completed |
+| Honest Money: Biblical Principles of Money and Banking |    Gary North    | Completed |
 
 ## 2019
 
