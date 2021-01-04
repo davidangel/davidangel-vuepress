@@ -1,8 +1,12 @@
 ---
+title: Highlights from “Up From Slavery” by Booker T. Washington
+pemalink: highlights-from-up-from-slavery
 date: 2019-12-03 03:13:30 +0000
-title: Highlights from Up From Slavery by Booker T. Washington
-permalink: /reading/my-notes/up-from-slavery
-description: My highlights from Booker T. Washington's Up From Slavery
+type: post
+excerpt: My highlights from Booker T. Washington's Up From Slavery
+tags:
+  - Books
+  - Reading
 ---
 
 ## Highlights from “Up From Slavery”

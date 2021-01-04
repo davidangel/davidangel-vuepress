@@ -2,12 +2,16 @@
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src -d dist",
-    "postbuild": "vuepress-sitemap -H https://davidangel.net -d dist"
+    "postbuild": "vuepress-sitemap -H https://davidangel.net -d dist",
+    "blog:new": "node src/.vuepress/createNewBlogPost.js"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
+    "@vuepress/plugin-blog": "^1.9.3",
     "@vuepress/plugin-google-analytics": "^1.7.1",
+    "@vuepress/theme-blog": "^2.3.3",
     "js-yaml": "^3.13.1",
+    "slugify": "^1.4.6",
     "tailwindcss": "^1.9.5",
     "vuepress": "^1.7.1"
   },
@@ -16,6 +20,7 @@
   },
   "dependencies": {
     "esm": "^3.2.25",
+    "moment": "^2.29.1",
     "vuepress-plugin-autometa": "^0.1.12",
     "vuepress-plugin-sitemap": "^2.3.0"
   }

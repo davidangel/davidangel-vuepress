@@ -45,7 +45,7 @@ A running list of some of the stuff I've been reading (and sometimes listening t
 | The Horse and His Boy                                                                |      C.S. Lewis      | Completed |
 | Scrappy Little Nobody (audiobook)                                                    |    Anna Kendrick     | Completed |
 | Prince Caspian                                                                       |      C.S. Lewis      | Completed |
-| Up From Slavery ([my highlights](/reading/my-notes/up-from-slavery))                 | Booker T. Washington | Completed |
+| Up From Slavery ([my highlights](/2019/12/03/highlights-from-up-from-slavery/))      | Booker T. Washington | Completed |
 
 ## 2018
 

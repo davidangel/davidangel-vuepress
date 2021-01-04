@@ -5,8 +5,13 @@
     <div class="content flex items-center">
       <div class="w-full md:mx-auto">
         <div class="shadow">
-          <div class="px-10 py-8 md:px-20 md:py-16 bg-white">
+          <div class="px-4 py-4 sm:px-8 sm:py-8 md:px-20 md:py-16 bg-white">
+            <div class="pt-4 text-sm text-gray-600 float-right" v-if="publishedAt">
+              Published on
+            {{ publishedAt }}
+            </div>
             <Content/>
+            <!-- {{ linkTags }} -->
           </div>
         </div>
       </div>
@@ -42,11 +47,21 @@
 
 <script>
 import { resolvePage, normalize, outboundRE, endingSlashRE } from "../util"
+import moment from 'moment'
 
 export default {
   props: ["sidebarItems"],
 
   computed: {
+
+    linkTags() {
+      return this.$page.frontmatter && this.$page.frontmatter.tags;
+    },
+
+    publishedAt() {
+      return this.$page.frontmatter && this.$page.frontmatter.type === 'post' && moment(this.$page.frontmatter.date).format('MMMM Do YYYY, h:mm:ss a');
+    },
+
     lastUpdated() {
       return this.$page.lastUpdated
     },
