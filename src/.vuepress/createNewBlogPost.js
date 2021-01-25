@@ -7,7 +7,7 @@ const slug = slugify(title, { lower: true })
 fs.writeFile(
   `src/_posts/${moment().format("YYYY-MM-DD")}-${slug}.md`,
   `---
-title: ${title}
+title: "${title}"
 pemalink: ${slug}
 date: ${moment().format("YYYY-MM-DD HH:MM:SS")}
 type: post
